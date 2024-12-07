@@ -58,7 +58,6 @@
             transition: opacity 0.5s ease-out;
         }
 
-        /* Spacer to create scroll effect */
         .scroll-spacer {
             height: 450vh;
             position: relative;
@@ -71,7 +70,6 @@
             z-index: 1;
         }
         
-        /* Divider section */
         .divider {
             height: 10vh;
             display: flex;
@@ -80,7 +78,6 @@
             background-color: #000;
         }
 
-        /* Section layout */
         .content-section {
             height: 100vh;
             display: flex;
@@ -97,17 +94,16 @@
 
         .section-viewer {
             width: 50%;
-            display: flex; /* Ensures child alignment */
-            align-items: center; /* Centers the spline viewer vertically */
+            display: flex; 
+            align-items: center; 
         }
 
-        /* Ensure Spline viewer fills its container */
         spline-viewer {
             width: 100%;
             height: 100%;
             max-width: 100%;
         }
-                /* Page sections */
+
         .page {
             display: none;
             min-height: 100vh;
@@ -119,7 +115,7 @@
             display: block;
         }
 
-        /* Typography */
+
         h1 {
             font-size: 3rem;
             margin-bottom: 20px;
@@ -132,10 +128,40 @@
             margin-bottom: 15px;
         }
 
-        /* About Page Styles */
         #about {
             padding: 20px;
         }
+         main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #444444;
+            padding-bottom: 1rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffa500;
+        }
+
+        .section ul {
+            padding-left: 1.5rem;
+        }
+
+        .section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .section ul li ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+    </style>
 
     </style>
 </head>
@@ -195,13 +221,91 @@
     </div>
 
     <!-- About Page -->
-    <div id="about" class="page">
-        <h1>About Cosmic Journey</h1>
-        <p>Cosmic Journey is an immersive exploration of the most fascinating celestial bodies in our universe. Our mission is to bring the wonders of space closer to everyone, showcasing the beauty and complexity of astronomical phenomena.</p>
-        <h2>Our Mission</h2>
-        <p>We believe in making space science accessible, engaging, and inspiring. Through advanced 3D visualization and compelling narratives, we aim to spark curiosity about the cosmos and our place within it.</p>
-        <h2>Our Team</h2>
-        <p>Our team comprises astronomers, designers, and space enthusiasts dedicated to creating breathtaking representations of celestial objects and phenomena.</p>
+<div id="about" class="page">
+     <main>
+        <section class="section">
+            <h2>Overview</h2>
+            <p>Welcome to the detailed exploration of Alios I, a terrestrial planet in the Nexar-B star system. Explore the interactive map of this project at <a href="#map" onclick="showPage('map')">NEXAR-B System Map</a>.</p>
+        </section>
+
+        <section class="section">
+            <h2>Star Characteristics</h2>
+            <ul>
+                <li>Star Type: Red, cooler, and fainter than the Sun.</li>
+                <li>Habitable Zone: Narrow and close to the star.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Formation & Orbital Characteristics</h2>
+            <ul>
+                <li>System Age: 5.22 billion years (older than our solar system).</li>
+                <li>Number of Planets: 3.</li>
+                <li>Number of Moons: 4-10.</li>
+                <li>Orbital Eccentricity: 0.2.</li>
+                <li>Semi-Major Axis: 0.6 AU.</li>
+                <li>Orbital Period: 169.6 days (0.4648 Earth years).</li>
+                <li>Position: Inner Solar System.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Planet Physical Characteristics</h2>
+            <ul>
+                <li>Type: Terrestrial.</li>
+                <li>Albedo: 36% (similar to Earth).</li>
+                <li>Surface Composition: Mixture of water and rock.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Geology</h2>
+            <ul>
+                <li>Cratering: Low visibility due to erosion.</li>
+                <li>Volcanism: Active, with a molten core.</li>
+                <li>Tectonics: Active, with a molten core.</li>
+                <li>Erosion: Water and wind processes.</li>
+                <li>Surface Age: Somewhat old, with indications of erosion and atmospheric conditions.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Interior & Magnetic Field</h2>
+            <ul>
+                <li>Radius: 10,183.93 km (1.6× Earth).</li>
+                <li>Mass: 1.48×10²⁵ kg (2.48× Earth).</li>
+                <li>Density: 3.47 g/cm³.</li>
+                <li>Gravity: 9.524 m/s² (slightly less than Earth).</li>
+                <li>Magnetic Field: Weak, due to high silicate content and limited conductive materials.</li>
+                <li>Composition Options:
+                    <ul>
+                        <li>Option 1: 90.3% Silicate Rock, 9.54% Iron/Nickel, trace gases.</li>
+                        <li>Option 2: 89.6% Silicate Rock, 9.66% Iron/Nickel, trace gases and water.</li>
+                    </ul>
+                </li>
+                <li>Rotation Rate: 16 hours (fast).</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Atmosphere & Temperature</h2>
+            <ul>
+                <li>Effective Temperature: 361 K (near boiling; water remains liquid).</li>
+                <li>Albedo Temperature: 326 K (similar to a hot summer day).</li>
+                <li>Atmospheric Temperature: 383 K (uninhabitable; water in vapor state).</li>
+                <li>Optical Depth: 0.6 (thick atmosphere).</li>
+                <li>Composition: Oxygen, Nitrogen, CO<sub>2</sub>.</li>
+                <li>Weather: Slow winds, distinct seasons, minimal day-night temperature differences.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Chemical Conditions</h2>
+            <ul>
+                <li>Spectrum Type: Absorption.</li>
+            </ul>
+        </section>
+    </main>
     </div>
 
     <div id="map" class="page">
