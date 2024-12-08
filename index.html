@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALIOS I</title>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
-    <!-- Import Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://raw.githubusercontent.com/alios-i/alios-i.github.io/refs/heads/main/favi.png" type="image/x-icon">
     
     <style>
-
-        /* Reset and base styles */
+        
         body, html {
             margin: 0;
             padding: 0;
@@ -21,7 +19,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Header Overlay */
         .header-overlay {
             position: fixed;
             top: 0;
@@ -47,7 +44,6 @@
             font-size: 1rem;
         }
 
-        /* Sticky Scene Container */
         .sticky-scene-container {
             position: sticky;
             top: 0;
@@ -174,10 +170,9 @@
         }
     </style>
 
-    </style>
 </head>
 <body>
-    <!-- Header Overlay -->
+    
     <div class="header-overlay">
         <div class="header-logo">ALIOS I</div>
         <nav class="header-nav">
@@ -191,18 +186,15 @@
     <!-- Home Page -->
     <div id="home" class="page active">
         <div class="page-container">
-            <!-- First Spline Scene Container -->
             <div class="scroll-spacer">
                 <div class="sticky-scene-container">
                     <spline-viewer url="https://prod.spline.design/d029r9yfPcYlAqs5/scene.splinecode"></spline-viewer>
                 </div>
             </div>
 
-            <!-- Divider Section -->
             <div class="divider">
             </div>
-            
-            <!-- Moons Section -->
+
             <div class="content-section">
                 <div class="section-content">
                     <h1>AURION & ZEPHYRA</h1>
@@ -214,7 +206,6 @@
                 </div>
             </div>
 
-            <!-- Sun Section -->
             <div class="scroll-spacer2">
                 <div class="sticky-scene-container">
                     <div class="content-section">
@@ -418,7 +409,7 @@
         </section>
     </main>
     </div>
-
+ <!--Map Page-->  
     <div id="map" class="page">
         <spline-viewer url="https://prod.spline.design/Po3bFnZ8RxGpfCCD/scene.splinecode"></spline-viewer>
     </div>
@@ -428,9 +419,7 @@
         window.onload = function() {
             window.scrollTo(0, 0);
         }
-
         function showPage(pageId) {
-            // Hide all pages
             document.querySelectorAll('.page').forEach(page => {
                 page.classList.remove('active');
             });
